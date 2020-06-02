@@ -38,4 +38,4 @@ jobs:
       run: npm install --global surge
 
     - name: Deploy to Surge
-      run: surge ./ yasser-shakoor-bootcamp2.surge.sh --token ${{secrets.YASSER_SURGE_TOKEN}}
+      run: surge ./build yasser-shakoor-bootcamp2.surge.sh --token ${{secrets.YASSER_SURGE_TOKEN}}
